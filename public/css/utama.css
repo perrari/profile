@@ -1,105 +1,104 @@
 #boba {
-    animation: fall-in 2s ease-in-out;
-  }
-
-  @keyframes fall-in {
-    0% {
-      top: -50vh;
-      opacity: 0;
-    }
-    100% {
-      top: 0;
-      opacity: 1;
-    }
-  }
-
-  #kiriatas {
-    animation: fall-in 2s ease-in-out;
-  }
-
-  @keyframes fall-in {
-    0% {
-      top: -50vh;
-      opacity: 0;
-    }
-    100% {
-      top: 0;
-      opacity: 1;
-    }
-  }
-
-
-  #prak {
-    animation: wipe-in 1s ease-in-out;
-  }
-  
-  @keyframes wipe-in {
-    0% {
-      transform: translatex(+60%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-
-  #name1 {
-    animation: fade-in 2s ease-in-out;
-  }
-  
-  @keyframes fade-in {
-    0% {
-opacity: 0;
+  animation: fall-in 2s ease-in-out;
 }
-100% {
-opacity: 1;
-}
-  }
 
-  #dev {
-    animation: fade-in 1s ease-in-out;
+@keyframes fall-in {
+  0% {
+    top: -50vh;
+    opacity: 0;
   }
-  
-  @keyframes fade-in {
-    0% {
-opacity: 0;
-}
-100% {
-opacity: 1;
-}
+  100% {
+    top: 0;
+    opacity: 1;
   }
+}
+
+#kiriatas {
+  animation: fall-in-kiriatas 2s ease-in-out;
+}
+
+@keyframes fall-in-kiriatas {
+  0% {
+    top: -50vh;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+#prak {
+  animation: wipe-in 1s ease-in-out;
+}
+
+@keyframes wipe-in {
+  0% {
+    transform: translateX(+60%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#name1 {
+  animation: fade-in 2s ease-in-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#dev {
+  animation: fade-in 1s ease-in-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 #ceo {
-    animation: wipe-in 2s ease-in-out;
-  }
-  
-  @keyframes wipe-in {
-    0% {
-      transform: translatex(+60%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
+  animation: wipe-in 2s ease-in-out;
+}
 
-  #kotak15 {
-    display: flex;
-    justify-content: space-around; /* Mengatur jarak antara tombol secara merata */
-    align-items: center; /* Mengatur penempatan tombol secara vertikal di tengah */
+@keyframes wipe-in {
+  0% {
+    transform: translateX(+60%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#kotak15 {
+  display: flex;
+  justify-content: space-around; /* Mengatur jarak antara tombol secara merata */
+  align-items: center; /* Mengatur penempatan tombol secara vertikal di tengah */
 }
 
 .icon-button {
-    display: inline-block;
-    width: 40px; /* Lebar tombol */
-    height: 40px; /* Tinggi tombol */
-    background-color: #ffffff; /* Warna latar belakang */
-    border-radius: 50%; /* Mengatur border radius agar menjadi lingkaran */
-    margin: 0 5px; /* Mengatur jarak antara tombol */
-    text-align: center; /* Mengatur penempatan ikon di tengah tombol */
-    line-height: 40px; /* Mengatur penempatan ikon di tengah tombol */
+  display: inline-block;
+  width: 40px; /* Lebar tombol */
+  height: 40px; /* Tinggi tombol */
+  background-color: #ffffff; /* Warna latar belakang */
+  border-radius: 50%; /* Mengatur border radius agar menjadi lingkaran */
+  margin: 0 5px; /* Mengatur jarak antara tombol */
+  text-align: center; /* Mengatur penempatan ikon di tengah tombol */
+  line-height: 40px; /* Mengatur penempatan ikon di tengah tombol */
 }
 
 .icon-button svg {
-    width: 40px; /* Lebar ikon */
-    height: 40px; /* Tinggi ikon */
-    fill: #000000; /* Warna ikon */
+  width: 40px; /* Lebar ikon */
+  height: 40px; /* Tinggi ikon */
+  fill: #000000; /* Warna ikon */
 }

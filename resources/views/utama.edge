@@ -5,20 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="/css/utama.css">
+  <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
   @entryPointStyles('app')
   @entryPointScripts('app')
 </head>
-<body style="background-image: url('/img/bgco.png'); background-size: cover;">
+<body class="bg-black">
+  <div id="floating-button">
+    <div id="floating-navbar" class=" text-lg font-semibold font-sans " >
+      <ul>
+        <li><a href="#home" >Home</a></li>
+        <li><a href="#profil">Profile</a></li>
+        <li><a href="#project">Project</a></li>
+      </ul>
+    </div>
+  </div>
+  
    <!-- bento box -->
-   <div class="container mx-auto px-4">
+   <div id="home" class="container mx-auto px-4 pb-8" style="background-image: url('/img/bghome.jpg'); background-size: cover;">
     <div class="grid grid-cols-3 gap-4">
-      <div id="kotak1" class=" p-4 rounded-3xl">
-        <img id="kiriatas" src="/img/kiriatas.png" class="w-full h-full object-cover rounded-md" /> 
+      <div id="kotak1" class=" rounded-3xl" style="background-image: url('/img/kiriatas.png'); background-size: contain; background-repeat:no-repeat; ">
+        <div id="clock"></div>
       </div>
-      <div id="kotak2" class="px-4 rounded-md">
-        <div class="container mx-auto flex justify-center items-center">
-          <img id="boba" src="/img/boba.png" class="w-full h-full object-cover  rounded-md" />
-        </div>
+      <div id="kotak2" class="px-4 rounded-md" style="background-image: url('/img/boba.png'); background-size: contain; background-repeat:no-repeat; ">
+        <div class="container px-6 gap-4 py-6 mx-auto flex justify-center items-center">
+         <!-- Tombol Profile -->
+         <a href="#profil" class="icon-button">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="profile"><path fill="#231f20" d="M256 250.8a73.34 73.34 0 1 1 73.33-73.34A73.41 73.41 0 0 1 256 250.8zm0-125.53a52.2 52.2 0 1 0 52.19 52.19A52.25 52.25 0 0 0 256 125.27zm117.07 282.6H138.93l-10.57-10.57a127.64 127.64 0 1 1 255.28 0zM150 386.73h212a106.51 106.51 0 0 0-212 0z"></path></svg>
+         </a>
+          <!-- Tombol Home -->
+       <a href="#home" class="icon-button">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+          <path d="M39.5,43h-9c-1.381,0-2.5-1.119-2.5-2.5v-9c0-1.105-0.895-2-2-2h-4c-1.105,0-2,0.895-2,2v9c0,1.381-1.119,2.5-2.5,2.5h-9	C7.119,43,6,41.881,6,40.5V21.413c0-2.299,1.054-4.471,2.859-5.893L23.071,4.321c0.545-0.428,1.313-0.428,1.857,0L39.142,15.52	C40.947,16.942,42,19.113,42,21.411V40.5C42,41.881,40.881,43,39.5,43z"></path>
+          </svg>
+       </a>
+       <!-- Tombol Project -->
+       <a href="#project" class="icon-button">
+        <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 116" viewBox="0 0 48.99 48.99" id="task"><rect width="46.99" height="46.99" x="1" y="1" fill="none" stroke="#231f20" stroke-miterlimit="10" stroke-width="2" rx="23.5"></rect><rect width="24.03" height="21.26" x="12.48" y="15.49" fill="none" stroke="#231f20" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" rx="1.46"></rect><path fill="none" stroke="#231f20" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.2 12.71v4.75M24.5 12.71v4.75M32.8 12.71v4.75M18.33 25.94l4.22 4.23 8.11-8.11"></path></svg>
+       </a>
+       </div>
       </div>      
       <div id="kotak3" class=" p-4 rounded-3xl">
        
@@ -33,7 +57,7 @@
           <img src="/img/prak1.png" id="prak" class="w-42 h-25 rounded-md cursor-pointer " data-hover-image="/img/prak2.png" />
           <div class="absolute hidden w-48 bg-white opacity-90 rounded-md shadow-lg z-10 top-full left-0">
             <a href="#" class="block px-8 py-4 hover:bg-gray-100">Guru SMK PGRI 7 Singhasari</a>
-            <a href="#" class="block px-8 py-4 hover:bg-gray-100">Guru SMA An-Nur 2 Bululawang</a>
+            <a href="https://smasannur.sch.id/" class="block px-8 py-4 hover:bg-gray-100">Guru SMA An-Nur 2 Bululawang</a>
           </div>
         </div>
       </div>
@@ -42,7 +66,7 @@
       </div>
       <div id="kotak8" class=" p-4 rounded-md">
       </div>
-      <div id="kotak9" class=" px-24 py-4 rounded-md">
+      <div id="kotak9" class=" pl-24 py-4 rounded-md">
         <div class="relative">
           <img src="/img/dev1.png" id="dev" class="w-42 h-25 rounded-md cursor-pointer " data-hover-image="/img/dev2.png" />        
           <div class="absolute hidden w-48 bg-white opacity-90 rounded-md shadow-lg z-10 top-full left-0">
@@ -60,7 +84,7 @@
         <div class="relative">
           <img src="/img/ceo1.png"  id="ceo" class="w-42 h-25 rounded-md cursor-pointer " data-hover-image="/img/ceo2.png" />
           <div class="absolute hidden w-48 bg-white opacity-90 rounded-md shadow-lg z-10 top-full left-0">
-            <a href="#" class="block px-8 py-4 hover:bg-gray-100">Ceo Macroma Media</a>
+            <a href="https://macroma.id/" class="block px-8 py-4 hover:bg-gray-100">Ceo Macroma Media</a>
           </div>
         </div>
       </div>
@@ -108,6 +132,8 @@
     </div>
     
       <div id="kotak16" class="bg-white opacity-80 pl-4 pt-4 rounded-3xl">
+        <h1 class="mb-4 font-extrabold">Recent Project</h1>
+        <a href="#link project terbaru" class=" font-semibold"> (Tanggal Upload / Pengerjaan) Project Name</a><br>
       </div>
       <div id="kotak17" class="pl-4 pt-4 rounded-3xl">
       </div>
@@ -115,7 +141,7 @@
         <h1 class="mb-4 font-extrabold">Education Background</h1>
         <div class="flex flex-wrap items-center">
           <div class="relative">
-            <img src="/img/bgco.png" alt="" class="w-20 h-20 mr-4 mb-4 rounded-xl" />
+            <img src="/img/unikama.png" alt="" class="w-20 h-20 mr-4 mb-4 rounded-xl grayscale hover:grayscale-0" data-hover-image="/img/unikama.png"/>
             <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center  opacity-0 transition-all duration-300 ease-in-out hover:opacity-100">
               <p class="bg-white px-4 py-2 rounded-md shadow-sm">
                Universitas PGRI Kanjuruhan Malang 
@@ -123,35 +149,62 @@
             </div>
           </div>
           <div class="relative">
-            <img src="/img/bgco.png" alt="" class="w-20 h-20 mr-4 mb-4 rounded-xl" />
+            <img src="/img/mutu.png" alt="" class="w-20 h-20 mr-4 mb-4 rounded-xl grayscale hover:grayscale-0" data-hover-image="/img/mutu.png" />
             <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center  opacity-0 transition-all duration-300 ease-in-out hover:opacity-100">
               <p class="bg-white px-4 py-2 rounded-md shadow-sm">
-               sekolah
+               SMK Muhammadiyah 7 Gondanglegi
               </p>
             </div>
           </div>
           <div class="relative">
-            <img src="/img/bgco.png" alt="" class="w-20 h-20 mr-4 mb-4 rounded-xl" />
+            <img src="/img/smp.png" alt="" class="w-20 h-20 mr-4 mb-4 rounded-xl grayscale hover:grayscale-0" data-hover-image="/img/smp.png" />
             <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center  opacity-0 transition-all duration-300 ease-in-out hover:opacity-100">
               <p class="bg-white px-4 py-2 rounded-md shadow-sm">
-               sekolah
+               SMPN 2 Bululawang
               </p>
             </div>
           </div>
           <div class="relative">
-            <img src="/img/bgco.png" alt="" class="w-20 h-20 mr-4 mb-4 rounded-xl" />
+            <img src="/img/sd.png" alt="" class="w-20 h-20 mr-4 mb-4 rounded-xl grayscale hover:grayscale-0"  data-hover-image="/img/sd.png"/>
             <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 transition-all duration-300 ease-in-out hover:opacity-100">
               <p class="bg-white px-4 py-2 rounded-md shadow-sm">
-               sekolah
+               SDN 2 Bululawang
               </p>
             </div>
           </div>
         </div>
       </div>
-      
     </div>
   </div>
    <!-- akhir bento box -->
+
+   <!-- profil -->
+   <div id="profil" class="container mx-auto px-4" style=" background-image: url('/img/bgprofil.jpg'); background-size: cover; ">
+    <div class="text-center pt-7 pb-7">
+      <img src="/img/profile.png" class="" alt="">
+    </div>
+    <div class="grid grid-cols-2 gap-4">
+      <div class="col-md-6 bg-white opacity-80 rounded-lg">
+        <p class=" text-justify text-lg mx-8 mt-8 ">Nama saya, <Span class=" font-bold">M FERRARI FIRMANSYAH.</Span></p>
+        <p class=" text-justify text-lg mx-8 mb-8">Saya seorang yang memiliki passion di bidang pendidikan dan teknologi. Saya menekuni sebagai guru di SMK dan juga sebagai freelance web programmer. Selain itu, saya juga merupakan CEO dari sebuah startup teknologi yang bergerak di bidang jasa layanan digital.
+
+          Saya memiliki jiwa yang ingin terus belajar dan berkembang. Saya selalu tertarik untuk mempelajari hal-hal baru dan melakukan hal-hal yang saya sukai. Akhir-akhir ini, saya mulai tertarik untuk terjun ke industri kreatif sebagai konten kreator.
+          
+          Saya yakin bahwa dengan kombinasi pengalaman, passion, dan jiwa belajar yang tinggi, saya dapat memberikan kontribusi yang positif bagi orang lain. Untuk mengenal saya lebih lanjut anda dapat menghubungi kontak yang tersedia. Terimakasih.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <img src="/img/picprofil.jpg" class="rounded-xl" alt="Gambar Profil">
+      </div>
+    </div>
+    <div class="text-center py-6 flex justify-center">
+      <a href="https://www.instagram.com/perrarii/" class="get-in-touch">
+        <img src="/img/git.png" alt="get in touch" class="hover:transform hover:scale-110">
+      </a>
+    </div>
+  </div>
+  
+   <!-- akhir  profil -->
 </body>
 
 <script>
@@ -196,6 +249,68 @@ dropdownButtons.forEach(button => {
   button.addEventListener('mouseout', () => {
     // Restore the original image based on the button's src
     button.src = defaultImage;
+  });
+});
+
+//jam
+const clock = document.getElementById('clock');
+
+    function updateClock() {
+      const now = new Date();
+      const hours = now.getHours().toString().padStart(2, '0');
+      const minutes = now.getMinutes().toString().padStart(2, '0');
+      const seconds = now.getSeconds().toString().padStart(2, '0');
+
+      // Determine AM/PM
+      const isAM = hours < 12 ? 'AM' : 'PM';
+      const displayHours = hours === 0 ? 12 : (hours > 12 ? hours - 12 : hours);
+
+      clock.textContent = `${displayHours}:${minutes}:${seconds} ${isAM}`;
+    }
+
+    updateClock(); // Initial display
+    setInterval(updateClock, 1000); // Update every second
+//akhir jam
+
+//scroll profil
+const profileButton = document.querySelector('.icon-button');
+const profileSection = document.getElementById('profil');
+
+profileButton.addEventListener('click', (event) => {
+  event.preventDefault();
+
+  // Animasi scroll ke bagian profil
+  window.scroll({
+    top: profileSection.offsetTop,
+    behavior: 'smooth',
+  });
+});
+// akhir scroll profil
+
+// Menambahkan event listener untuk resize window
+window.addEventListener('resize', () => {
+  // Memperbarui posisi button dan navbar saat window diubah ukurannya
+  const button = document.getElementById('floating-button');
+  const navbar = document.getElementById('floating-navbar');
+  button.style.top = `${50 - button.offsetHeight / 2}%`;
+  navbar.style.top = `${50 - navbar.offsetHeight / 2}%`;
+});
+
+const navLinks = document.querySelectorAll('#floating-navbar a');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault(); // Mencegah navigasi default
+
+    const targetElement = document.querySelector(link.getAttribute('href'));
+    const targetY = targetElement.offsetTop;
+
+    // Scroll halus ke target
+    window.scrollTo({
+      top: targetY,
+      behavior: 'smooth',
+      duration: 3000,
+    });
   });
 });
 

@@ -21,13 +21,13 @@
   </div>
   
    <!-- bento box -->
-   <div id="home" class="container mx-auto px-4 pb-8" style="background-image: url('/img/bghome.jpg'); background-size: cover;">
+   <div id="home" class="container mx-auto px-4 pb-8 xl:bg-cover md:bg-contain " style="background-image: url('/img/bghome.jpg');">
     <div class="grid grid-cols-3 gap-4">
       <div id="kotak1" class=" rounded-3xl" style="background-image: url('/img/kiriatas.png'); background-size: contain; background-repeat:no-repeat; ">
         <div id="clock"></div>
       </div>
       <div id="kotak2" class="px-4 rounded-md" style="background-image: url('/img/boba.png'); background-size: contain; background-repeat:no-repeat; ">
-        <div class="container px-6 gap-4 py-6 mx-auto flex justify-center items-center">
+        <div class="container px-6 gap-4 xl:py-6 md:py-2  mx-auto flex justify-center items-center">
          <!-- Tombol Profile -->
          <a href="#profil" class="icon-button">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="profile"><path fill="#231f20" d="M256 250.8a73.34 73.34 0 1 1 73.33-73.34A73.41 73.41 0 0 1 256 250.8zm0-125.53a52.2 52.2 0 1 0 52.19 52.19A52.25 52.25 0 0 0 256 125.27zm117.07 282.6H138.93l-10.57-10.57a127.64 127.64 0 1 1 255.28 0zM150 386.73h212a106.51 106.51 0 0 0-212 0z"></path></svg>
@@ -62,7 +62,7 @@
         </div>
       </div>
       <div id="kotak7" class="pl-28 pt-0 rounded-md">
-        <img id="name1" src="/img/name.png" class="w-39 h-28 rounded-md" />
+        <img id="name1" src="/img/name.png" class=" xl:w-full xl:h-28 md:w-full md:h-20  rounded-md" />
       </div>
       <div id="kotak8" class=" p-4 rounded-md">
       </div>
@@ -141,7 +141,7 @@
         <h1 class="mb-4 font-extrabold">Education Background</h1>
         <div class="flex flex-wrap items-center">
           <div class="relative">
-            <img src="/img/unikama.png" alt="" class="w-20 h-20 mr-4 mb-4 rounded-xl grayscale hover:grayscale-0" data-hover-image="/img/unikama.png"/>
+            <img src="/img/unikama.png" alt="" class="xl:w-20 xl:h-20 md:w-14 md:h-14 mr-4 mb-4 rounded-xl grayscale hover:grayscale-0" data-hover-image="/img/unikama.png"/>
             <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center  opacity-0 transition-all duration-300 ease-in-out hover:opacity-100">
               <p class="bg-white px-4 py-2 rounded-md shadow-sm">
                Universitas PGRI Kanjuruhan Malang 
@@ -149,7 +149,7 @@
             </div>
           </div>
           <div class="relative">
-            <img src="/img/mutu.png" alt="" class="w-20 h-20 mr-4 mb-4 rounded-xl grayscale hover:grayscale-0" data-hover-image="/img/mutu.png" />
+            <img src="/img/mutu.png" alt="" class="xl:w-20 xl:h-20 md:w-14 md:h-14 mr-4 mb-4 rounded-xl grayscale hover:grayscale-0" data-hover-image="/img/mutu.png" />
             <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center  opacity-0 transition-all duration-300 ease-in-out hover:opacity-100">
               <p class="bg-white px-4 py-2 rounded-md shadow-sm">
                SMK Muhammadiyah 7 Gondanglegi
@@ -157,7 +157,7 @@
             </div>
           </div>
           <div class="relative">
-            <img src="/img/smp.png" alt="" class="w-20 h-20 mr-4 mb-4 rounded-xl grayscale hover:grayscale-0" data-hover-image="/img/smp.png" />
+            <img src="/img/smp.png" alt="" class="xl:w-20 xl:h-20 md:w-14 md:h-14 mr-4 mb-4 rounded-xl grayscale hover:grayscale-0" data-hover-image="/img/smp.png" />
             <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center  opacity-0 transition-all duration-300 ease-in-out hover:opacity-100">
               <p class="bg-white px-4 py-2 rounded-md shadow-sm">
                SMPN 2 Bululawang
@@ -165,7 +165,7 @@
             </div>
           </div>
           <div class="relative">
-            <img src="/img/sd.png" alt="" class="w-20 h-20 mr-4 mb-4 rounded-xl grayscale hover:grayscale-0"  data-hover-image="/img/sd.png"/>
+            <img src="/img/sd.png" alt="" class="xl:w-20 xl:h-20 md:w-14 md:h-14 mr-4 mb-4 rounded-xl grayscale hover:grayscale-0"  data-hover-image="/img/sd.png"/>
             <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 transition-all duration-300 ease-in-out hover:opacity-100">
               <p class="bg-white px-4 py-2 rounded-md shadow-sm">
                SDN 2 Bululawang
@@ -215,38 +215,47 @@
           <div class="carousel-inner">
               <div class="carousel-item">
                   <img src="/img/testcaro.png" >
+                  <div id="judulproject" class="rounded-xl ml-10 mr-10">Judul Project</div>
                   <div id="caption" class="rounded-xl ml-10 mr-10">Keterangan Gambar 1. Ini adalah contoh keterangan yang lebih panjang. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
               </div>
               <div class="carousel-item">
                   <img src="/img/testcaro.png" >
+                  <div id="judulproject" class="rounded-xl ml-10 mr-10">Judul Project</div>
                   <div id="caption" class="rounded-xl ml-10 mr-10">Keterangan Gambar 2. Ini adalah contoh keterangan yang lebih panjang. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
               </div>
               <div class="carousel-item">
                   <img src="/img/testcaro.png" alt="Slide 3">
+                  <div id="judulproject" class="rounded-xl ml-10 mr-10">Judul Project</div>
                   <div id="caption" class="rounded-xl ml-10 mr-10">Keterangan Gambar 3. Ini adalah contoh keterangan yang lebih panjang. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
               </div>
               <div class="carousel-item">
                   <img src="/img/testcaro.png" alt="Slide 4">
+                  <div id="judulproject" class="rounded-xl ml-10 mr-10">Judul Project</div>
                   <div id="caption" class="rounded-xl ml-10 mr-10">Keterangan Gambar 4. Ini adalah contoh keterangan yang lebih panjang. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
               </div>
               <div class="carousel-item">
                   <img src="/img/testcaro.png" alt="Slide 5">
+                  <div id="judulproject" class="rounded-xl ml-10 mr-10">Judul Project</div>
                   <div id="caption" class="rounded-xl ml-10 mr-10">Keterangan Gambar 5. Ini adalah contoh keterangan yang lebih panjang. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
               </div>
               <div class="carousel-item">
                   <img src="/img/testcaro.png" alt="Slide 6">
+                  <div id="judulproject" class="rounded-xl ml-10 mr-10">Judul Project</div>
                   <div id="caption" class="rounded-xl ml-10 mr-10">Keterangan Gambar 6. Ini adalah contoh keterangan yang lebih panjang. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
               </div>
               <div class="carousel-item">
                   <img src="/img/testcaro.png" alt="Slide 7">
+                  <div id="judulproject" class="rounded-xl ml-10 mr-10">Judul Project</div>
                   <div id="caption" class="rounded-xl ml-10 mr-10">Keterangan Gambar 7. Ini adalah contoh keterangan yang lebih panjang. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
               </div>
               <div class="carousel-item">
                   <img src="/img/testcaro.png"  alt="Slide 8">
+                  <div id="judulproject" class="rounded-xl ml-10 mr-10">Judul Project</div>
                   <div id="caption" class="rounded-xl ml-10 mr-10">Keterangan Gambar 8. Ini adalah contoh keterangan yang lebih panjang. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
               </div>
               <div class="carousel-item">
                   <img src="/img/testcaro.png"  alt="Slide 9">
+                  <div id="judulproject" class="rounded-xl ml-10 mr-10">Judul Project</div>
                   <div id="caption" class="rounded-xl ml-10 mr-10">Keterangan Gambar 9. Ini adalah contoh keterangan yang lebih panjang. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
               </div>
           </div>

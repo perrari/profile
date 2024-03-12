@@ -1,3 +1,5 @@
+
+
 #boba {
   animation: fall-in 2s ease-in-out;
 }
@@ -84,6 +86,8 @@
   display: flex;
   justify-content: space-around; /* Mengatur jarak antara tombol secara merata */
   align-items: center; /* Mengatur penempatan tombol secara vertikal di tengah */
+  width: 100%; /* Mengatur lebar tombol */
+  height: 100%; /* Mengatur tinggi tombol */
 }
 
 .icon-button {
@@ -222,6 +226,16 @@
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+#judulproject {
+  text-align: center;
+  margin-top: 10px;
+  padding: 0 20px; /* Tambahkan padding untuk memberikan ruang pada paragraf */
+  font-size: 14px; /* Ganti ukuran font sesuai kebutuhan */
+  color: #333; /* Ganti warna teks sesuai kebutuhan */
+  line-height: 1.5; /* Sesuaikan jarak antarbaris sesuai kebutuhan */
+  background-color: #fff;
+}
+
 #caption {
   text-align: center;
   margin-top: 10px;
@@ -230,4 +244,21 @@
   color: #333; /* Ganti warna teks sesuai kebutuhan */
   line-height: 1.5; /* Sesuaikan jarak antarbaris sesuai kebutuhan */
   background-color: #fff;
+}
+
+/* ------------------ RESPONSIVE LAPTOP 1024p ------------------------ */
+@media screen and (max-width: 1024px) {
+  .carousel-item {
+    flex: 0 0 33.33%; /* Tampilkan 3 item sekaligus */
+    max-width: 33.33%;
+  }
+
+  #clock {
+    font-family: 'Orbitron', sans-serif;;
+    font-size: 25px;
+    color: #000000;
+    padding: 15px;
+  }
+
+  
 }

@@ -310,7 +310,10 @@
     color: #000000;
     padding: 15px;
   }
-
+  #name {
+    width: inherit;
+    height: inherit;
+  }
   
 }
 
@@ -321,7 +324,11 @@
   #home {
     background-image: url('/img/bgmobile.jpg'); 
     background-size: contain;
-   } 
+   }
+   
+   #floating-button {
+    visibility: hidden;
+   }
 
    #clock {
    display: none;
@@ -339,30 +346,6 @@
    #kotak2 {
     padding-bottom:  70px;
     background-size: inherit;
-   }
-   #kotak6 {
-    padding: 16px;
-   }
-
-   #kotak9 {
-    padding: 16px;
-   }
-   #kotak12 {
-    padding: 16px;
-   }
-
-   #kotak6 .img {
-   width: 120px;
-   height: 52px;
-   }
-
-   #kotak9 .img {
-    width: full;
-    height: full;
-   }
-   #kotak12 .img {
-    width: full;
-    height: full;
    }
    
    #gambarprofil {

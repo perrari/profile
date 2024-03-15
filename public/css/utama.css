@@ -263,6 +263,29 @@
     padding: 15px;
   }
 
+  .icon-button {
+    display: inline-block;
+    width: 30px; /* Lebar tombol */
+    height: 30px; /* Tinggi tombol */
+    background-color: #ffffff; /* Warna latar belakang */
+    border-radius: 50%; /* Mengatur border radius agar menjadi lingkaran */
+    margin: 0 5px; /* Mengatur jarak antara tombol */
+    text-align: center; /* Mengatur penempatan ikon di tengah tombol */
+    line-height: 30px; /* Mengatur penempatan ikon di tengah tombol */
+  }
+  
+  .icon-button svg {
+    width: 30px; /* Lebar ikon */
+    height: 30px; /* Tinggi ikon */
+    fill: #000000; /* Warna ikon */
+  }
+  
+  .icon-button svg:hover {
+    width: 35px; /* Lebar ikon */
+    height: 35px; /* Tinggi ikon */
+    fill: #000000; /* Warna ikon */
+    position: relative;
+  }
   
 }
 
@@ -289,4 +312,98 @@
   }
 
   
+}
+
+/* ------------------ RESPONSIVE mobile ------------------------ */
+
+
+@media screen and (max-width: 500px) {
+  #home {
+    background-image: url('/img/bgmobile.jpg'); 
+    background-size: contain;
+   } 
+
+   #clock {
+   display: none;
+  }
+  
+  #name {
+    width: fit-content;
+    height: fit-content;
+  }
+  
+  #kotak1 {
+    visibility: hidden;
+   }
+   
+   #kotak2 {
+    padding-bottom:  70px;
+    background-size: inherit;
+   }
+   #kotak6 {
+    padding: 16px;
+   }
+
+   #kotak9 {
+    padding: 16px;
+   }
+   #kotak12 {
+    padding: 16px;
+   }
+
+   #kotak6 .img {
+   width: 120px;
+   height: 52px;
+   }
+
+   #kotak9 .img {
+    width: full;
+    height: full;
+   }
+   #kotak12 .img {
+    width: full;
+    height: full;
+   }
+   
+   #gambarprofil {
+    display: none;
+   }
+
+   .carousel-item {
+    flex: 0 0 100%; /* Hanya satu item yang ditampilkan dalam satu baris pada layar kecil */
+    max-width: 100%;
+
+}
+ #edupic {
+  width: 30px;
+  height: 30px;
+ }
+
+ .icon-button {
+  display: inline-block;
+  width: 30px; /* Lebar tombol */
+  height: 30px; /* Tinggi tombol */
+  background-color: #ffffff; /* Warna latar belakang */
+  border-radius: 50%; /* Mengatur border radius agar menjadi lingkaran */
+  margin:  5px; /* Mengatur jarak antara tombol */
+  text-align: center; /* Mengatur penempatan ikon di tengah tombol */
+  line-height: 30px; /* Mengatur penempatan ikon di tengah tombol */
+}
+
+.icon-button svg {
+  width: 30px; /* Lebar ikon */
+  height: 30px; /* Tinggi ikon */
+  fill: #000000; /* Warna ikon */
+}
+
+.icon-button svg:hover {
+  width: 35px; /* Lebar ikon */
+  height: 35px; /* Tinggi ikon */
+  fill: #000000; /* Warna ikon */
+  position: relative;
+}
+
+#eb {
+  font-size: medium;
+}
 }

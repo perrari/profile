@@ -17,9 +17,8 @@
 | import './routes/customer''
 |
 */
-
-// import Route from '@ioc:Adonis/Core/Route'
-
+ import Route from '@ioc:Adonis/Core/Route'
+ 
 Route.get('/', async ({ view }) => {
   return view.render('utama')
 })
